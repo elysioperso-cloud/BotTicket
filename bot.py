@@ -4,6 +4,22 @@ import logging
 import discord
 from discord.ext import commands
 
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot en ligne !"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+
 logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s] [%(levelname)s] %(name)s: %(message)s",
@@ -47,4 +63,6 @@ if __name__ == "__main__":
         raise SystemExit(
             "Merci de renseigner votre token Discord dans config.json avant de lancer le bot."
         )
+        keep_alive() # Démarre le serveur web
+
     bot.run(CONFIG["token"])
