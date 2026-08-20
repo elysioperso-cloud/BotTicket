@@ -1,0 +1,22 @@
+{
+  "token": "VOTRE_TOKEN_DISCORD_ICI",
+  "guild_id": 123456789012345678,
+  "ticket_category_id": 1540000643140427776,
+  "transcript_channel_id": 1540003617673576479,
+  "support_role_ids": [
+    123456789012345678
+  ],
+  "emojis": {
+    "world": "<:world:1539998248763138048>",
+    "villager": "<:Villager:1539998246863114331>",
+    "iron_golem": "<a:IronGolem:1539993673150767264>",
+    "bug": "<:bug:1540010096401064046>",
+    "staff": "<a:staff:1540007128687845458>",
+    "discord": "<:discord:1539998245864874134>",
+    "loading": "<a:loading:1540001474354876476>",
+    "notepad": "<a:NotePad:1540007126272049364>",
+    "hand": "<a:hand:1540007127416967178>",
+    "golden": "<a:golden:1540007129820172389>",
+    "know": "<:know:1540007131078459584>"
+  }
+}
